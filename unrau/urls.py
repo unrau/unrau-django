@@ -1,6 +1,10 @@
 from django.urls import path, include
 from django.contrib import admin
 
+# TEST
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+# ENDTEST
+
 admin.autodiscover()
 
 import pages.views
@@ -19,3 +23,4 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("blog/", include('blog.urls')),
 ]
+urlpatterns += staticfiles_urlpatterns()
