@@ -200,18 +200,6 @@ a#navi-link-contact:active {
     text-align: center;
     font-size: 12px;
 }
-@supports (-webkit-touch-callout: none) {
-	/* CSS for Apple Devices */
-	#footer {
-		background-color: #e5c6ec;
-	}
-}
-@supports not (-webkit-touch-callout: none) {
-	/* CSS for Non-Apple Devices */
-	#footer {
-		background-color: #efb9eb;
-	}
-}
 
 #footer-sep {
     height: 44px;
