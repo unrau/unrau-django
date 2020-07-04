@@ -191,7 +191,7 @@ a#navi-link-contact:active {
 #footer {
     min-height: 150px;
     margin-bottom: 0;
-    background-color: #EFB9EB;
+    background-color: #e5c6ec;
     background-image: url('/static/images/footer-tile.png');
     background-size: 1px auto;
     background-repeat: repeat-x;
@@ -199,6 +199,16 @@ a#navi-link-contact:active {
     color: #ffffff;
     text-align: center;
     font-size: 12px;
+}
+@supports (-webkit-touch-callout: none) {
+	#footer {
+		background-color: #dfc6e8;
+	}
+}
+@supports not (-webkit-touch-callout: none) {
+	#footer {
+		background-color: #efb9eb;
+	}
 }
 
 #footer-sep {
@@ -211,6 +221,7 @@ a#navi-link-contact:active {
 
 #footer-sep-bottom {
     height: 44px;
+ 
     background-image: url('/static/images/footer.png');
     background-size: 800px auto;
     background-repeat: no-repeat;
