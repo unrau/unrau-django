@@ -201,11 +201,13 @@ a#navi-link-contact:active {
     font-size: 12px;
 }
 @supports (-webkit-touch-callout: none) {
+	/* CSS for Apple Devices */
 	#footer {
-		background-color: #dfc6e8;
+		background-color: #e5c6ec;
 	}
 }
 @supports not (-webkit-touch-callout: none) {
+	/* CSS for Non-Apple Devices */
 	#footer {
 		background-color: #efb9eb;
 	}
