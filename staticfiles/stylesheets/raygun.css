@@ -191,7 +191,7 @@ a#navi-link-contact:active {
 #footer {
     min-height: 150px;
     margin-bottom: 0;
-    background-color: #e5c6ec;
+    background-color: #EFB9EB;
     background-image: url('/static/images/footer-tile.png');
     background-size: 1px auto;
     background-repeat: repeat-x;
