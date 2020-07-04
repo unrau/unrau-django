@@ -4,4 +4,4 @@
 
 Python 3.8.2
 
-Django 3.0.7
+Django 3.0.8
