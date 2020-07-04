@@ -1,0 +1,228 @@
+
+/* IMPORT FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+
+
+/* STYLESHEET TODO LIST
+
+/* - make responsive behaviour of subtitle images better for small devices
+/*
+
+
+
+
+/* SITE */
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    background-image: url('/static/images/header-tile.png');
+    background-repeat: repeat-x;
+    background-size: 1px auto;
+    background-position-y: top;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+/* HEADER */
+
+#header {
+    height: 131px;
+    background-image: url('/static/images/header.png');
+    background-repeat: no-repeat;
+    background-size: 800px 132px;
+    background-position-x: center;
+    text-align: center;
+}
+
+#title img {
+    width: 329px;
+    max-width: 90%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#subtitle {
+    display: inline-block;
+}
+
+#pronouns {
+    width: 55px;
+    height: auto;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#jamie-pic {
+    width: 111px;
+    height: auto;
+    vertical-align: top;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#aka {
+    width: 90px;
+    height: auto;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+
+
+
+/* NAVIGATION */
+
+#navi {
+    margin-top: 70px;
+    text-align: center;
+    background-image: url('/static/images/nav-sep-tile.png');
+    background-size: 1px auto;
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+}
+
+.navi-links {
+    text-align: center;
+    cursor: default; /* correct text-cursor between menu buttons */
+}
+
+.navi-link {
+    display: inline-block;
+    height: 24px;
+    margin: 0 5px 0 5px;
+}
+
+a#navi-link-home,
+a#navi-link-home:link {
+    width: 48px;
+    background-image: url('/static/images/nav-home-normal.png');
+    background-repeat: no-repeat;
+    background-size: auto 24px;
+}
+a#navi-link-home:hover,
+a#navi-link-home:active {
+    background-image: url('/static/images/nav-home-hover.png');
+}
+a#navi-link-apps,
+a#navi-link-apps:link {
+    width: 48px;
+    background-image: url('/static/images/nav-apps-normal.png');
+    background-repeat: no-repeat;
+    background-size: auto 24px;
+}
+a#navi-link-apps:hover,
+a#navi-link-apps:active {
+    background-image: url('/static/images/nav-apps-hover.png');
+}
+a#navi-link-comics,
+a#navi-link-comics:link {
+    width: 65px;
+    background-image: url('/static/images/nav-comics-normal.png');
+    background-repeat: no-repeat;
+    background-size: auto 24px;
+}
+a#navi-link-comics:hover,
+a#navi-link-comics:active {
+    background-image: url('/static/images/nav-comics-hover.png');
+}
+a#navi-link-music,
+a#navi-link-music:link {
+    width: 53px;
+    background-image: url('/static/images/nav-music-normal.png');
+    background-repeat: no-repeat;
+    background-size: auto 24px;
+}
+a#navi-link-music:hover,
+a#navi-link-music:active {
+    background-image: url('/static/images/nav-music-hover.png');
+}
+a#navi-link-contact,
+a#navi-link-contact:link {
+    width: 77px;
+    background-image: url('/static/images/nav-contact-normal.png');
+    background-repeat: no-repeat;
+    background-size: auto 24px;
+}
+a#navi-link-contact:hover,
+a#navi-link-contact:active {
+    background-image: url('/static/images/nav-contact-hover.png');
+}
+
+#navi-sep {
+    position: relative;
+    background-image: url('/static/images/nav-sep.png');
+    background-repeat: no-repeat;
+    background-size: 800px auto;
+    background-position-x: center;
+    height: 32px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+
+
+
+/* CONTENT */
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#content {
+    padding: 25px 50px 25px 50px;
+}
+
+
+
+
+/* FOOTER */
+
+#footer {
+    min-height: 150px;
+    margin-bottom: 0;
+    background-color: #e5c6ec;
+    background-image: url('/static/images/footer-tile.png');
+    background-size: 1px auto;
+    background-repeat: repeat-x;
+    background-position-y: top;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+}
+
+#footer-sep {
+    height: 44px;
+    background-image: url('/static/images/footer.png');
+    background-size: 800px auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#footer-sep-bottom {
+    height: 44px;
+    background-image: url('/static/images/footer.png');
+    background-size: 800px auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    transform: scaleY(-1);
+    margin-top: 15px;
+}
+
+#footer .navi-links {
+    margin: 5px 0 20px 0;
+}
+
+#footer p {
+    margin: 0 0 2px 0;
+}

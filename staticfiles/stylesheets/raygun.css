@@ -1,0 +1,10 @@
+body {
+    background-color: #3c3c3c;
+    color: #c3c3c3;
+    text-align: center;
+    padding-top: 100px;
+}
+
+p.bold{
+    font-weight: bold;
+}
