@@ -201,7 +201,7 @@ a#navi-link-contact:active {
     font-size: 12px;
 }
 @supports (-webkit-touch-callout: none) {
-	/* CSS for Apple Devices */
+	/* CSS for iOS and iPad Devices */
 	#footer {
 		background-color: #e5c6ec;
 	}
@@ -211,6 +211,19 @@ a#navi-link-contact:active {
 	#footer {
 		background-color: #efb9eb;
 	}
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (    min-moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    /* CSS for other Apple Devices */
+    #footer {
+        background-color: #e5c6ec;
+    }
 }
 
 #footer-sep {
