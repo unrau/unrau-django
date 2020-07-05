@@ -16,6 +16,8 @@ def apps(request):
 def contact(request):
     return render(request, 'contact.html', {})
 
+def comics(request):
+    return render(request, 'comics.html', {})
 
 def db(request):
 
