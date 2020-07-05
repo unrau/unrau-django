@@ -13,6 +13,9 @@ def index(request):
 def apps(request):
     return render(request, 'apps.html', {})
 
+def contact(request):
+    return render(request, 'contact.html', {})
+
 
 def db(request):
 
