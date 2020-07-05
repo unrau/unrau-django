@@ -25,5 +25,6 @@ urlpatterns = [
     path("db/", pages.views.db, name="db"),
     path("admin/", admin.site.urls),
     path("blog/", include('blog.urls')),
+    path("music/", include('music.urls')),
 ]
 urlpatterns += staticfiles_urlpatterns()
