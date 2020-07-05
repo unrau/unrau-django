@@ -187,6 +187,19 @@ a#navi-link-contact:active {
     padding: 25px 50px 25px 50px;
 }
 
+#content a,
+#content a:link {
+    color: #8AB9E1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 4px 0 4px;
+}
+#content a:hover,
+#content a:active {
+    background-color: #373E64;
+    color: #e5c6ec;
+}
+
 
 
 
