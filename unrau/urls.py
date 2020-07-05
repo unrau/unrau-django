@@ -19,6 +19,7 @@ import pages.views
 
 urlpatterns = [
     path("", pages.views.index, name="index"),
+    path ("apps", pages.views.apps, name="apps"),
     path("db/", pages.views.db, name="db"),
     path("admin/", admin.site.urls),
     path("blog/", include('blog.urls')),

@@ -10,6 +10,9 @@ from .models import Greeting
 def index(request):
     return render(request, 'index.html', {})
 
+def apps(request):
+    return render(request, 'apps.html', {})
+
 
 def db(request):
 
