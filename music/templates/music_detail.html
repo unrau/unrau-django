@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<center>
+    <h2>{{ musicentry.title_text }}</h2>
+    <p>{{ musicentry.pub_date.date }}</p>
+</center>
+<p>{{ musicentry.content_text }}</p>
+
+
+{% endblock %}

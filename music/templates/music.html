@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<center><h2>Music</h2></center>
+
+{{ template_name }}
+
+{% for post in music_list %}
+<div>
+    <a href="{% url 'music_detail' post.slug  %}">{{ post.title_text }}</a>
+    <p>{{ post.pub_date }} </p>
+    <p>{{ post.content_text }}</p>
+</div>
+{% endfor %}
+
+{% endblock %}
