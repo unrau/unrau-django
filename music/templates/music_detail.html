@@ -2,11 +2,12 @@
 {% load static %}
 {% block content %}
 
-<center>
-    <h2>{{ musicentry.title_text }}</h2>
-    <p>{{ musicentry.pub_date.date }}</p>
-</center>
-<p>{{ musicentry.content_text | safe }}</p>
-
+<div class="music-post">
+    <div class="post-title">
+        <h3>{{ musicentry.title_text }}</h3>
+        <p class="post-date">{{ musicentry.pub_date.date }} </p>
+    </div>
+    <div class="post-content">{{ musicentry.content_text | safe }}</div>
+</div>
 
 {% endblock %}
