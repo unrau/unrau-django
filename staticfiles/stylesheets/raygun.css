@@ -268,75 +268,74 @@ a#navi-link-contact:active {
     margin-bottom: 30px;
     color: #4C708E;
     font-size: 16px;
- }
+    text-align: center;
+}
 
- .music-post .post-title a,
- .music-post .post-title a:link {
-     color: #4C708E !important;
- }
- .music-post .post-title a:hover,
- .music-post .post-title a:active {
-     color: #373E64 !important;
-     background-color: transparent !important;
- }
+a.music-post-title-link {
+    background-color: transparent !important;
+}
+a.music-post-title-link .post-title:hover h3 {
+    color: #373E64;
+}
 
- .music-post .post-content a,
- .music-post .post-content a:link {
-     color: #8CBCE4 !important;
- }
- .music-post .post-content a:hover,
- .music-post .post-content a:active {
-     color: #373E64 !important;
-     background-color: transparent !important;
- }
+.music-post .post-content a,
+.music-post .post-content a:link {
+    color: #8CBCE4 !important;
+}
+.music-post .post-content a:hover,
+.music-post .post-content a:active {
+    color: #373E64 !important;
+    background-color: transparent !important;
+}
 
- .music-post img {
-     max-width: 100%;
-     height: auto;
-     -webkit-border-radius: 20px;
-     -moz-border-radius: 20px;
-     border-radius: 20px;
-     border-bottom-style: solid;
-     border-bottom-width: 4px;
-     border-bottom-color: #4C708E;
- }
+.music-post img {
+    max-width: 100%;
+    height: auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #4C708E;
+}
 
- .music-post .post-title {
-     text-align: center;
-     background-color: #FFFFFF;
-     -webkit-border-radius: 20px;
-     -moz-border-radius: 20px;
-     border-radius: 20px;
-     max-width: 100%;
-     padding: 10px;
-     border-bottom-style: solid;
-     border-bottom-width: 4px;
-     border-bottom-color: #FED5FE;
- }
- .music-post .post-title h3 {
-     color: #4C708E;
- }
- .music-post .post-title p {
-     margin: 0;
- }
+.music-post .post-title {
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    background-color: #FFFFFF;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    max-width: 100%;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #FED5FE;
+}
+.music-post .post-title h3 {
+    color: #4C708E;
+}
+.music-post .post-title p {
+    margin: 0;
+}
 
- .music-post .post-date {
-     color: #8CBCE4;
- }
+.music-post .post-date {
+    color: #8CBCE4;
+}
 
- .music-post .post-content {
-     margin: 20px 0;
-     text-align: center;
- }
+.music-post .post-content {
+    margin: 20px 0;
+}
 
- .music-post .note-video-clip {
+.music-post .note-video-clip {
     border-bottom-style: solid;
     border-bottom-width: 4px;
     border-bottom-color: #4C708E;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
- }
+}
 
 
 

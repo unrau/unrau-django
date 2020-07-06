@@ -13,10 +13,12 @@
 
 {% for post in music_list %}
 <div class="music-post">
-    <div class="post-title">
-        <h3><a href="{% url 'music_detail' post.slug  %}">{{ post.title_text }}</a></h3>
-        <p class="post-date">{{ post.pub_date.date }} </p>
-    </div>
+    <a href="{% url 'music_detail' post.slug  %}" class="music-post-title-link">
+        <div class="post-title">
+            <h3>{{ post.title_text }}</h3>
+            <p class="post-date">{{ post.pub_date.date }} </p>
+        </div>
+    </a>
     <div class="post-content">{{ post.content_text | safe }}</div>
 </div>
 {% endfor %}
