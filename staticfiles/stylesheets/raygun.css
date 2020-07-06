@@ -76,7 +76,28 @@ ul.pagination {
 ul.pagination li {
     display: inline-block;
     padding: 10px;
+    margin: 0 10px;
     font-size: 18px;
+    background-color: #E5C6EC;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #373E64;
+}
+ul.pagination li:hover a {
+    color: #FFFFFF !important;
+}
+ul.pagination a,
+ul.pagination a:link {
+    color: #373E64 !important;
+    font-family: 'Ostrich Sans Heavy', 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+ul.pagination a:hover,
+ul.pagination a:active {
+    background-color: transparent !important;
 }
 
 
