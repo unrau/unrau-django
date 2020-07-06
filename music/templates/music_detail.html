@@ -6,7 +6,7 @@
     <h2>{{ musicentry.title_text }}</h2>
     <p>{{ musicentry.pub_date.date }}</p>
 </center>
-<p>{{ musicentry.content_text }}</p>
+<p>{{ musicentry.content_text | safe }}</p>
 
 
 {% endblock %}

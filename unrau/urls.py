@@ -1,9 +1,9 @@
 from django.urls import path, include
 from django.contrib import admin
 
-# TEST
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-# ENDTEST
+from django.conf import settings
+from django.conf.urls.static import static
 
 admin.autodiscover()
 
@@ -26,5 +26,10 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("blog/", include('blog.urls')),
     path("music/", include('music.urls')),
+    path('summernote/', include('django_summernote.urls')),
 ]
+
 urlpatterns += staticfiles_urlpatterns()
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

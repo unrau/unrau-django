@@ -10,7 +10,7 @@
 <div>
     <a href="{% url 'music_detail' post.slug  %}">{{ post.title_text }}</a>
     <p>{{ post.pub_date }} </p>
-    <p>{{ post.content_text }}</p>
+    <p>{{ post.content_text | safe }}</p>
 </div>
 {% endfor %}
 
