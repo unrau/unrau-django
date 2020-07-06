@@ -8,7 +8,7 @@ class MusicList(generic.ListView):
     context_object_name = 'music_list'
     queryset = MusicEntry.objects.filter(status=1).order_by('-pub_date')
     template_name = 'music.html'
-    paginate_by = 3
+    paginate_by = 6
 
 class MusicDetail(generic.DetailView):
     model = MusicEntry
