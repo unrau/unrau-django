@@ -2,25 +2,32 @@
 {% load static %}
 {% block content %}
 
-<center><h2>Music</h2></center>
+<div class="page-title">
+    <h2>MUSIC</h2>
+    <p>I write and perform original songs and parodies, and sometimes perform at Open Mics.</p>
+    <b>Upcoming Live Performances:</b><br />
+    None
+</div>
 
 {{ template_name }}
 
 {% for post in music_list %}
-<div>
-    <a href="{% url 'music_detail' post.slug  %}">{{ post.title_text }}</a>
-    <p>{{ post.pub_date }} </p>
-    <p>{{ post.content_text | safe }}</p>
+<div class="music-post">
+    <div class="post-title">
+        <h3><a href="{% url 'music_detail' post.slug  %}">{{ post.title_text }}</a></h3>
+        <p class="post-date">{{ post.pub_date.date }} </p>
+    </div>
+    <div class="post-content">{{ post.content_text | safe }}</div>
 </div>
 {% endfor %}
 
 {% if is_paginated %}
 <ul class="pagination justify-content-center">
     {% if page_obj.has_previous %}
-    <li><a href="?page={{ page_obj.previous_page_number }}">&laquo; PREV </a></li>
+    <li><a href="?page={{ page_obj.previous_page_number }}">&laquo; NEWER </a></li>
     {% endif %}
     {% if page_obj.has_next %}
-    <li><a href="?page={{ page_obj.next_page_number }}"> NEXT &raquo;</a></li>
+    <li><a href="?page={{ page_obj.next_page_number }}"> OLDER &raquo;</a></li>
     {% endif %}
 </ul>
 {% endif %}

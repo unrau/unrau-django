@@ -15,6 +15,18 @@
 
 
 
+/* COLOURS
+- Dark Blue        - #373E64
+- Dark Medium Blue - #4C708E
+- Medium Blue      - #8CBCE4
+- Light Blue       - #D1E1F2
+- Light Pink       - #E5C6EC
+- Bright Pink      - #FED5FE
+*/
+
+
+
+
 /* STYLESHEET TODO LIST
 
 /* - make responsive behaviour of subtitle images better for small devices
@@ -44,13 +56,27 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ostrich Sans Heavy', 'Open Sans', sans-serif;
-    margin: 10px 0 10px 0;
+    margin: 0 0 10px 0;
+    color: #373E64;
 }
 h1 {
-    font-size: 30px;
+    font-size: 48px;
 }
 h2 {
     font-size: 36px;
+}
+h3 {
+    font-size: 30px;
+}
+
+ul.pagination {
+    text-align: center;
+    padding: 0;
+}
+ul.pagination li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
 }
 
 
@@ -196,7 +222,7 @@ a#navi-link-contact:active {
 
 
 
-/* CONTENT */
+/* CONTENT - GLOBAL */
 
 .content-wrapper {
     max-width: 800px;
@@ -219,6 +245,89 @@ a#navi-link-contact:active {
     background-color: #373E64;
     color: #e5c6ec;
 }
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* CONTENT - MUSIC */
+
+.music-post {
+    padding: 15px 25px;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    border-bottom-color: #8CBCE4;
+    background-color: #D1E1F2;
+    margin-bottom: 30px;
+    color: #4C708E;
+    font-size: 16px;
+ }
+
+ .music-post .post-title a,
+ .music-post .post-title a:link {
+     color: #4C708E !important;
+ }
+ .music-post .post-title a:hover,
+ .music-post .post-title a:active {
+     color: #373E64 !important;
+     background-color: transparent !important;
+ }
+
+ .music-post .post-content a,
+ .music-post .post-content a:link {
+     color: #8CBCE4 !important;
+ }
+ .music-post .post-content a:hover,
+ .music-post .post-content a:active {
+     color: #373E64 !important;
+     background-color: transparent !important;
+ }
+
+ .music-post img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ .music-post .post-title {
+     text-align: center;
+     background-color: #FFFFFF;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     border-radius: 20px;
+     max-width: 100%;
+     padding: 10px;
+     border-bottom-style: solid;
+     border-bottom-width: 4px;
+     border-bottom-color: #FED5FE;
+ }
+ .music-post .post-title p {
+     margin: 0;
+ }
+
+ .music-post .post-date {
+     color: #8CBCE4;
+ }
+
+ .music-post .post-content {
+     margin: 20px 0;
+     text-align: center;
+ }
+
+ .music-post .note-video-clip {
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #4C708E;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+ }
 
 
 
@@ -248,7 +357,6 @@ a#navi-link-contact:active {
 
 #footer-sep-bottom {
     height: 44px;
- 
     background-image: url('/static/images/footer.png');
     background-size: 800px auto;
     background-repeat: no-repeat;
