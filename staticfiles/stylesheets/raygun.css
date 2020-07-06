@@ -313,6 +313,9 @@ a#navi-link-contact:active {
      border-bottom-width: 4px;
      border-bottom-color: #FED5FE;
  }
+ .music-post .post-title h3 {
+     color: #4C708E;
+ }
  .music-post .post-title p {
      margin: 0;
  }
