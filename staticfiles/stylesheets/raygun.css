@@ -87,11 +87,11 @@ ul.pagination li {
     border-bottom-color: #373E64;
 }
 ul.pagination li:hover a {
-    color: #FFFFFF !important;
+    color: #373E64 !important;
 }
 ul.pagination a,
 ul.pagination a:link {
-    color: #373E64 !important;
+    color: #FFFFFF !important;
     font-family: 'Ostrich Sans Heavy', 'Open Sans', sans-serif;
     font-size: 20px;
 }
