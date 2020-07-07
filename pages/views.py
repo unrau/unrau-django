@@ -19,6 +19,9 @@ def contact(request):
 def comics(request):
     return render(request, 'comics.html', {})
 
+def keybender(request):
+    return render(request, 'keybender.html', {})
+
 def db(request):
 
     greeting = Greeting()
