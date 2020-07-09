@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="page-title">
+    <h2>BLOG</h2>
+    <p>This is a place for updates related to my software development and other projects.</p>
+</div>
+
+{% for post in blog_list %}
+<div class="blog-post">
+    <a href="{% url 'blog_detail' post.slug  %}" class="blog-post-title-link">
+        <div class="post-title">
+            <h3>{{ post.title_text }}</h3>
+            <p class="post-date">{{ post.pub_date.date }} </p>
+        </div>
+    </a>
+    <div class="post-content">{{ post.content_text | safe }}</div>
+</div>
+{% endfor %}
+
+{% if is_paginated %}
+<ul class="pagination justify-content-center">
+    {% if page_obj.has_previous %}
+    <li><a href="?page={{ page_obj.previous_page_number }}">&laquo; NEWER </a></li>
+    {% endif %}
+    {% if page_obj.has_next %}
+    <li><a href="?page={{ page_obj.next_page_number }}"> OLDER &raquo;</a></li>
+    {% endif %}
+</ul>
+{% endif %}
+
+{% endblock %}

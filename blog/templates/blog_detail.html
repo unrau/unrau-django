@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="blog-post">
+    <div class="post-title">
+        <h3>{{ blogentry.title_text }}</h3>
+        <p class="post-date">{{ blogentry.pub_date.date }} </p>
+    </div>
+    <div class="post-content">{{ blogentry.content_text | safe }}</div>
+</div>
+
+{% endblock %}
