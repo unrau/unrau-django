@@ -231,6 +231,17 @@ a#navi-link-contact:hover,
 a#navi-link-contact:active {
     background-image: url('/static/images/nav-contact-hover.png');
 }
+a#navi-link-blog,
+a#navi-link-blog:link {
+    width: 46px;
+    background-image: url('/static/images/nav-blog-normal.png');
+    background-repeat: no-repeat;
+    background-size: auto 24px;
+}
+a#navi-link-blog:hover,
+a#navi-link-blog:active {
+    background-image: url('/static/images/nav-blog-hover.png');
+}
 
 #navi-sep {
     position: relative;
