@@ -1,1 +1,16 @@
+{% block content %}
+
 <p>Recent Blog Posts</p>
+
+{% for post in blog_list %}
+<div class="blog-post">
+    <a href="{% url 'blog_detail' post.slug  %}" class="blog-post-title-link">
+    <div class="post-title">
+        <h3>{{ post.title_text }}</h3>
+        <p class="post-date">{{ post.pub_date.date }} </p>
+    </div></a>
+    <div class="post-content">{{ post.content_text | truncatewords:40 | safe }}</div>
+</div>
+{% endfor %}
+
+{% endblock %}
