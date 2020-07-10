@@ -396,18 +396,17 @@ a.music-post-title-link .post-title:hover h3 {
 /* CONTENT - BLOG */
 
 .blog-post {
-    padding: 15px 25px;
+    padding: 15px 0 0 0;
     border-bottom-style: solid;
     border-bottom-width: 4px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    border-bottom-color: #8CBCE4;
-    background-color: #D1E1F2;
+    border-bottom-color: #373E64;
+    background-color: #FFFFFF;
     margin-bottom: 30px;
     color: #4C708E;
     font-size: 16px;
-    text-align: center;
 }
 
 a.blog-post-title-link {
@@ -440,17 +439,18 @@ a.blog-post-title-link .post-title:hover h3 {
 
 .blog-post .post-title {
     display: inline-block;
-    width: 95%;
+    width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     max-width: 100%;
-    padding: 10px;
-    border-bottom-style: solid;
-    border-bottom-width: 4px;
-    border-bottom-color: #FED5FE;
+    padding-top: 25px;
+
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-top-color: #8CBCE4;
 }
 .blog-post .post-title h3 {
     color: #4C708E;
@@ -465,6 +465,7 @@ a.blog-post-title-link .post-title:hover h3 {
 
 .blog-post .post-content {
     margin: 20px 0;
+    padding: 0 25px 15px 25px;
 }
 
 .blog-post .note-video-clip {
