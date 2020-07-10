@@ -23,7 +23,6 @@ urlpatterns = [
     path("comics", pages.views.comics, name="comics"),
     path("contact", pages.views.contact, name="contact"),
     path("keybender", pages.views.keybender, name="keybender"),
-    path("db/", pages.views.db, name="db"),
     path("admin/", admin.site.urls),
     path("blog/", include('blog.urls')),
     path("music/", include('music.urls')),
