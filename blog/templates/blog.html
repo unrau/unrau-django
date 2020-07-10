@@ -14,7 +14,7 @@
         <h3>{{ post.title_text }}</h3>
         <p class="post-date">{{ post.pub_date.date }} </p>
     </div></a>
-    <div class="post-content">{{ post.content_text | safe }}</div>
+    <div class="post-content">{{ post.content_text | truncatewords:40 | safe }}</div>
 </div>
 {% endfor %}
 
