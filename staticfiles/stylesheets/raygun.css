@@ -174,14 +174,14 @@ ul.pagination a:active {
     display: inline-block;
     height: 24px;
     margin: 0 5px 0 5px;
+    background-repeat: no-repeat;
+    background-size: auto 24px;
 }
 
 a#navi-link-home,
 a#navi-link-home:link {
     width: 48px;
     background-image: url('/static/images/nav-home-normal.png');
-    background-repeat: no-repeat;
-    background-size: auto 24px;
 }
 a#navi-link-home:hover,
 a#navi-link-home:active {
@@ -191,8 +191,6 @@ a#navi-link-apps,
 a#navi-link-apps:link {
     width: 48px;
     background-image: url('/static/images/nav-apps-normal.png');
-    background-repeat: no-repeat;
-    background-size: auto 24px;
 }
 a#navi-link-apps:hover,
 a#navi-link-apps:active {
@@ -202,8 +200,6 @@ a#navi-link-comics,
 a#navi-link-comics:link {
     width: 65px;
     background-image: url('/static/images/nav-comics-normal.png');
-    background-repeat: no-repeat;
-    background-size: auto 24px;
 }
 a#navi-link-comics:hover,
 a#navi-link-comics:active {
@@ -213,8 +209,6 @@ a#navi-link-music,
 a#navi-link-music:link {
     width: 53px;
     background-image: url('/static/images/nav-music-normal.png');
-    background-repeat: no-repeat;
-    background-size: auto 24px;
 }
 a#navi-link-music:hover,
 a#navi-link-music:active {
@@ -224,8 +218,6 @@ a#navi-link-contact,
 a#navi-link-contact:link {
     width: 77px;
     background-image: url('/static/images/nav-contact-normal.png');
-    background-repeat: no-repeat;
-    background-size: auto 24px;
 }
 a#navi-link-contact:hover,
 a#navi-link-contact:active {
@@ -235,8 +227,6 @@ a#navi-link-blog,
 a#navi-link-blog:link {
     width: 46px;
     background-image: url('/static/images/nav-blog-normal.png');
-    background-repeat: no-repeat;
-    background-size: auto 24px;
 }
 a#navi-link-blog:hover,
 a#navi-link-blog:active {
