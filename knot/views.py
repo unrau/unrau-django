@@ -6,7 +6,7 @@ from .models import KnotEntry
 class KnotList(generic.ListView):
     model = KnotEntry
     context_object_name = 'knot_list'
-    queryset = KnotEntry.objects.filter(status=1).order_by('-page_num')[0:1]
+    queryset = KnotEntry.objects.filter(status=1).order_by('-page_num')[0:1]    # fetch only the 1 latest page
     template_name = 'knot.html'
 
 class KnotDetail(generic.DetailView):
