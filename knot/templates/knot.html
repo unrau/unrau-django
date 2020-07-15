@@ -8,7 +8,7 @@
 {% for post in knot_list %}
 <div class="knot-post">
     <div class="post-title">
-        <a href="{% url 'knot_detail' post.slug  %}" class="knot-post-title-link">{{ post.title_text }}</a>
+        <a href="{% url 'knot_detail' post.page_num  %}" class="knot-post-title-link">{{ post.title_text }}</a>
     </div>
     <div class="post-comic"><img src="{{ post.comic_image.url }}" /></div>
     <div class="post-content">{{ post.content_text | safe }}</div>

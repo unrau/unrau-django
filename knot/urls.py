@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('', views.KnotList.as_view(), name='knot'),
-    path('<slug:slug>/', views.KnotDetail.as_view(), name='knot_detail'),
-]
+    path('<slug:page_num>/', views.KnotDetail.as_view(), name='knot_detail'),
+]   

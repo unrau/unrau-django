@@ -13,3 +13,5 @@ class KnotList(generic.ListView):
 class KnotDetail(generic.DetailView):
     model = KnotEntry
     template_name = 'knot_detail.html'
+    slug_field = 'page_num'
+    slug_url_kwarg = 'page_num'
