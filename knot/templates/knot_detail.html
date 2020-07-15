@@ -11,6 +11,11 @@
     <div class="post-content">{{ knotentry.content_text | safe }}</div>
 </div>
 
-
+<ul>
+    <li><a href="/knot/{{ knotentry.previous }}">PREV</a></li>
+    <li><a href="/knot/0/">FIRST</a></li>
+    <li><a href="/knot/{{ knotentry.latest }}">LATEST</a></li>
+    <li><a href="/knot/{{ knotentry.next }}">NEXT</a></li>
+</ul>
 
 {% endblock %}
