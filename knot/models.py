@@ -11,7 +11,7 @@ STATUS = (
 class KnotEntry(models.Model):
     title_text = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
-    page_num = models.IntegerField(default=0)
+    page_num = models.IntegerField(default=0, unique=True)
     comic_image = models.ImageField(upload_to='kotw')
     content_text = models.TextField()
     pub_date = models.DateTimeField('date published')
