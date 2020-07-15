@@ -6,7 +6,6 @@ class KnotAdmin(SummernoteModelAdmin):
     list_display = ('title_text', 'page_num', 'pub_date', 'status')
     list_filter = ("status",)
     search_fields = ['title_text', 'content_text']
-    prepopulated_fields = {'slug': ('title_text',)}
     summernote_fields = ('content_text',)
 
 admin.site.register(KnotEntry, KnotAdmin)
