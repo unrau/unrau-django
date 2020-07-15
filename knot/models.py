@@ -42,3 +42,7 @@ class KnotEntry(models.Model):
     def _latest_page(self):
         return KnotEntry.objects.latest('page_num').page_num
     latest = property(_latest_page)
+
+    def _second_latest_page(self):
+        return KnotEntry.objects.latest('page_num').page_num - 1
+    second_latest = property(_second_latest_page)
