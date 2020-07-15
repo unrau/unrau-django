@@ -1,0 +1,14 @@
+{% extends "knot_base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="knot-post">
+    <div class="post-title">
+        <h3>{{ knotentry.title_text }}</h3>
+        <p class="post-date">{{ knotentry.pub_date.date }}</p>
+    </div>
+    <div class="post-comic"><img src="{{ knotentry.comic_image.url }}" /></div>
+    <div class="post-content">{{ knotentry.content_text | safe }}</div>
+</div>
+
+{% endblock %}

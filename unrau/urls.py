@@ -26,6 +26,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("blog/", include('blog.urls')),
     path("music/", include('music.urls')),
+    path("knot/", include('knot.urls')),
     path('summernote/', include('django_summernote.urls')),
 ]
 

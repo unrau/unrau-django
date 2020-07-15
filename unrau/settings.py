@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "pages",
     "blog",
     "music",
+    "knot",
     "django_summernote",
 ]
 

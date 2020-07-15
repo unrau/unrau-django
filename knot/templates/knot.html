@@ -1,0 +1,30 @@
+{% extends "knot_base.html" %}
+{% load static %}
+{% block content %}
+
+<h2>Knot of this World</h2>
+<p>This is my first webcomic!</p>
+
+{% for post in knot_list %}
+<div class="knot-post">
+    <div class="post-title">
+        <a href="{% url 'knot_detail' post.slug  %}" class="knot-post-title-link">{{ post.title_text }}</a>
+    </div>
+    <div class="post-comic"><img src="{{ post.comic_image.url }}" /></div>
+    <div class="post-content">{{ post.content_text | safe }}</div>
+    <div class="post-date">Published on {{ post.pub_date.date }} </p>
+</div>
+{% endfor %}
+
+{% if is_paginated %}
+<ul>
+    {% if page_obj.has_previous %}
+    <li><a href="?page={{ page_obj.previous_page_number }}">&laquo; NEXT </a></li>
+    {% endif %}
+    {% if page_obj.has_next %}
+    <li><a href="?page={{ page_obj.next_page_number }}"> PREVIOUS &raquo;</a></li>
+    {% endif %}
+</ul>
+{% endif %}
+
+{% endblock %}
