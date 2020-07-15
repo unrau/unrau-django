@@ -18,7 +18,7 @@ class KnotEntry(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
-        ordering = ['-pub_date', 'pk']
+        ordering = ['-page_num', 'pk']
 
     def __str__(self):
         return self.title_text
