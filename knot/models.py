@@ -44,5 +44,7 @@ class KnotEntry(models.Model):
     latest = property(_latest_page)
 
     def _second_latest_page(self):
+        # This is used only as the PREV link on the comic home page,
+        # which always shows the latest comic
         return KnotEntry.objects.latest('page_num').page_num - 1
     second_latest = property(_second_latest_page)
