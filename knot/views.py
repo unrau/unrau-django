@@ -6,9 +6,8 @@ from .models import KnotEntry
 class KnotList(generic.ListView):
     model = KnotEntry
     context_object_name = 'knot_list'
-    queryset = KnotEntry.objects.filter(status=1).order_by('-page_num')
+    queryset = KnotEntry.objects.filter(status=1).order_by('-page_num')[0:1]
     template_name = 'knot.html'
-    paginate_by = 1
 
 class KnotDetail(generic.DetailView):
     model = KnotEntry
