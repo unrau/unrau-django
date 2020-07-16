@@ -2,20 +2,21 @@
 {% load static %}
 {% block content %}
 
-<h2>Knot of this World</h2>
-<p>This is my first webcomic!</p>
-
 {% for post in knot_list %}
+
+<ul class="comic-nav">
+    <li><a href="/knot/{{ post.second_latest }}">&lsaquo; PREV</a></li>
+    <li><a href="/knot/0/">&laquo; FIRST</a></li>
+</ul>
+
 <div class="knot-post">
-    <div class="post-title">
-        <a href="{% url 'knot_detail' post.page_num  %}" class="knot-post-title-link">{{ post.title_text }}</a>
-    </div>
-    <div class="post-comic"><img src="{{ post.comic_image.url }}" /></div>
+    <div class="post-title"><h4>Page {{ post.page_num }} - &quot;{{ post.title_text }}&quot;</h4></div>
+    <div class="post-comic"><a href="{% url 'knot_detail' post.page_num  %}" class="knot-post-title-link"><img src="{{ post.comic_image.url }}" class="comic" /></a></div>
     <div class="post-content">{{ post.content_text | safe }}</div>
-    <div class="post-date">Published on {{ post.pub_date.date }} </p>
+    <div class="post-date">- Dax Ripley - {{ post.pub_date.date }}</p>
 </div>
 
-<ul>
+<ul class="comic-nav">
     <li><a href="/knot/{{ post.second_latest }}">PREV</a></li>
     <li><a href="/knot/0/">FIRST</a></li>
 </ul>

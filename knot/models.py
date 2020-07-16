@@ -48,3 +48,18 @@ class KnotEntry(models.Model):
         # which always shows the latest comic
         return KnotEntry.objects.latest('page_num').page_num - 1
     second_latest = property(_second_latest_page)
+
+    def _is_latest(self):
+        latestpage = KnotEntry.objects.latest('page_num').page_num
+        if self.page_num == latestpage:
+            return True
+        else:
+            return False
+    is_latest = property(_is_latest)
+
+    def _is_first(self):
+        if self.page_num == 0:
+            return True
+        else:
+            return False
+    is_first = property(_is_first)

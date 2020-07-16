@@ -1,4 +1,71 @@
-img {
+
+/* KNOT OF THIS WORLD WEB COMIC STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+#knot {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+#knot-logo {
+    width: 400px;
     max-width: 100%;
     height: auto;
+}
+
+#knot h2 {
+    font-size: 30px;
+}
+#knot h3 {
+    font-size: 20px;
+}
+#knot h4 {
+    font-size: 18px;
+}
+
+img.comic {
+    width: 1000px;
+    max-width: 100%;
+    height: auto;
+}
+
+.post-title h4 {
+    margin-bottom: 0;
+}
+
+ul.comic-nav {
+    margin: 50px 0;
+    padding: 0;
+}
+
+#knot a,
+#knot a:link {
+    text-decoration: none;
+    color: #66a1d0;
+}
+#knot a:hover,
+#know a:active {
+    color: #1e4d72;
+}
+
+ul.comic-nav a,
+ul.comic-nav a:link {
+    font-weight: bold;
+}
+
+ul.comic-nav li {
+    display: inline;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #c7c7c7;
+}
+
+#knot .post-content p {
+    margin-top: 0;
+}
+
+#knot .post-date {
+    margin-bottom: 30px;
 }
