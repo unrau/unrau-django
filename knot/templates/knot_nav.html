@@ -1,0 +1,21 @@
+{% load static %}
+{% block content %}
+
+<ul class="comic-nav">
+    {% if knotentry.is_first %}
+    <li>&lsaquo; PREV</li>
+    <li>&laquo; FIRST</li>
+    {% else %}
+    <li><a href="/knot/{{ knotentry.previous }}">&lsaquo; PREV</a></li>
+    <li><a href="/knot/0/">&laquo; FIRST</a></li>
+    {% endif %}
+    {% if knotentry.is_latest %}
+    <li>LATEST &raquo;</li>
+    <li>NEXT &rsaquo;</li>
+    {% else %}
+    <li><a href="/knot/{{ knotentry.latest }}">LATEST &raquo;</a></li>
+    <li><a href="/knot/{{ knotentry.next }}">NEXT &rsaquo;</a></li>
+    {% endif %}
+</ul>
+
+{% endblock %}
