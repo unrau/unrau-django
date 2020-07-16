@@ -2,6 +2,8 @@
 {% load static %}
 {% block content %}
 
+{% if knot_list %}
+
 {% for post in knot_list %}
 
 <ul class="comic-nav">
@@ -26,5 +28,11 @@
 </ul>
 
 {% endfor %}
+
+{% else %}
+
+<p>Coming soon!</p>
+
+{% endif %}
 
 {% endblock %}
