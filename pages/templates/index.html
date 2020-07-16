@@ -3,13 +3,24 @@
 {% block content %}
 
 <div class="page-title">
-    <h2>WELCOME!</h2>
+    <h2>Hello :)</h2>
 </div>
 
-<p>I make websites, apps, games, comics, and music, some of which under my pseudonym Dax Ripley.</p>
-<p>I'm still developing this brand-new website, so there's not much content yet in these pages. Please check back very soon! You'll know the website is finished when this message has vanished :)</p>
-<p>In the mean time, you can contact me at <a href="mailto:jamie@unrau.me">jamie@unrau.me</a>, or on twitter <a href="https://twitter.com/dax_ripley">@dax_ripley</a>.</p>
+<div id="home-content">
 
-{% include "blog_recents.html" %}
+    <p>My name is Jamie, and I make websites, apps, games, comics, and music.</p>
+
+    <p>I often use my pseudonym Dax Ripley.</p>
+
+    <p>Use the links above to navigate this website, or the links below to find me on the web.</p>
+
+    <ul class="social-links">
+        <li><a href="mailto:jamie@unrau.me">&#128231;</a></li>
+        <li><a href="https://twitter.com/dax_ripley"><img src="/static/images/social-twitter.png" /></a></li>
+        <li><a href="https://www.youtube.com/channel/UCwbriYbNxp1cD4rvgHdBJCw"><img src="/static/images/social-youtube.png" /></a></li>
+        <li><a href="https://github.com/unrau/"><img src="/static/images/social-github.png" /></a></li>
+    </ul>
+
+</div> <!-- #home-content -->
 
 {% endblock %}

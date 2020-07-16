@@ -284,6 +284,44 @@ a#navi-link-blog:active {
 
 
 
+/* CONTENT - HOME */
+
+#home-content {
+    text-align: center;
+}
+
+ul.social-links {
+    margin: 0;
+    padding: 0;
+    font-size: 54px;
+}
+
+ul.social-links li {
+    display: inline-block;
+    padding: 15px;
+}
+
+ul.social-links img {
+    height: 40px;
+    width: auto;
+}
+
+ul.social-links a,
+ul.social-links a:link {
+    color: #000000 !important;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: transparent;
+}
+ul.social-links a:hover,
+ul.social-links a:active {
+    background-color: transparent !important;
+    border-bottom-color: #373E64;
+}
+
+
+
+
 /* CONTENT - APPS */
 
 .app-entry {
