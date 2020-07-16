@@ -486,6 +486,22 @@ a.blog-post-title-link .post-title:hover h3 {
 
 
 
+/* CONTENT - COMICS */
+
+a.comic-link,
+a.comic-link:link {
+    text-decoration: none !important;
+}
+
+img.comic-thumb {
+    width: 200px;
+    height: auto;
+    max-width: 90%;
+}
+
+
+
+
 /* FOOTER */
 
 #footer {
