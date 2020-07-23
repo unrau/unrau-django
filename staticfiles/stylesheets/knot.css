@@ -6,6 +6,8 @@
 #knot {
     text-align: center;
     font-family: "Open Sans", sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 #knot-logo {
@@ -61,6 +63,10 @@ ul.comic-nav li {
     font-size: 20px;
     font-weight: bold;
     color: #c7c7c7;
+}
+
+#knot .post-content {
+    padding: 0 20px;
 }
 
 #knot .post-content p {
