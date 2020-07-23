@@ -6,6 +6,12 @@
     <h2>COMICS</h2>
 </div>
 
-<center><a href="{% url 'knot' %}" class="comic-link"><img src="/static/images/comic-kotw.png" class="comic-thumb" /></a></center>
+<div class="comic">
+    <img src="/static/images/comic-kotw.png" class="comic-thumb" />
+    <ul class="comic-links">
+        <li><a href="{% url 'knot' %}0/">BEGINNING</a></li>
+        <li><a href="{% url 'knot' %}">LATEST</a></li>
+    </ul>
+</div>
 
 {% endblock %}

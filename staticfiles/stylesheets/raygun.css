@@ -537,6 +537,23 @@ img.comic-thumb {
     max-width: 90%;
 }
 
+.comic {
+    text-align: center;
+}
+
+ul.comic-links {
+    margin: 0;
+    padding: 0;
+}
+
+ul.comic-links li {
+    display: inline-block;
+}
+
+ul.comic-links a {
+    font-size: 18px;
+}
+
 
 
 
