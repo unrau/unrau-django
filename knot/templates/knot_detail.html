@@ -8,7 +8,7 @@
     <div class="post-title"><h4>Page {{ knotentry.page_num }} - &quot;{{ knotentry.title_text }}&quot;</h4></div>
     <div class="post-comic"><img src="{{ knotentry.comic_image.url }}" class="comic"/></div>
     <div class="post-content">{{ knotentry.content_text | safe }}</div>
-    <div class="post-date">- Dax Ripley - {{ knotentry.pub_date.date }}</p>
+    <div class="post-date">{{ knotentry.pub_date.date }} &#8212; <a href="https://twitter.com/dax_ripley/">@dax_ripley</a></div>
 </div>
 
 {% include 'knot_nav.html' %}
